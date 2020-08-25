@@ -40,6 +40,6 @@ app.delete('/products/:id', (req, res) => {
 });
 
 app.put('/products/:id', (req, res) => {
-
+    res.send("Product Update: "+ req.params.id);
 });
 app.listen(3000);
